@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melb Carpet Care - Professional Carpet Repair Melbourne</title>
+    <meta name="description" content="Professional carpet repair & restoration in Melbourne. Expert carpet patching, stretching, burn repair, pet damage restoration. Save 80% vs replacement. 24/7 emergency service. Call now for FREE quote!">
+    <meta name="keywords" content="carpet repair Melbourne, carpet patching, carpet stretching, carpet burn repair, pet damage carpet, carpet restoration Melbourne">
+    <title>Melb Carpet Care - #1 Carpet Repair & Restoration Melbourne | Save $1000s</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
     <style>
         * {
             margin: 0;
@@ -30,20 +33,20 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
             color: white;
             padding: 18px 35px;
             text-decoration: none;
             border-radius: 50px;
             font-size: 1.2rem;
             font-weight: bold;
-            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.6);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
             transition: all 0.3s;
         }
         
         .floating-cta a:hover {
             transform: scale(1.1);
-            box-shadow: 0 12px 40px rgba(255, 107, 53, 0.8);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.8);
         }
         
         @keyframes pulse {
@@ -95,6 +98,7 @@
             display: flex;
             gap: 2rem;
             list-style: none;
+            align-items: center;
         }
         
         .nav-links a {
@@ -105,6 +109,13 @@
         
         .nav-links a:hover {
             opacity: 0.8;
+        }
+        
+        .nav-phone {
+            background: #ff6b35;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
         }
         
         .hero {
@@ -245,6 +256,29 @@
             margin-bottom: 3rem;
         }
         
+        /* Service Areas */
+        .service-areas {
+            background: #f0f7ff;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            max-width: 1000px;
+            margin: 2rem auto;
+        }
+        
+        .area-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-weight: 500;
+        }
+        
         /* Special Offer Section */
         .special-offer {
             background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
@@ -284,29 +318,6 @@
         .special-offer p {
             font-size: 1.5rem;
             margin-bottom: 2rem;
-        }
-        
-        .timer {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 30px 0;
-        }
-        
-        .timer-box {
-            background: rgba(255,255,255,0.2);
-            padding: 15px 25px;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-        }
-        
-        .timer-number {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        
-        .timer-label {
-            font-size: 0.9rem;
         }
         
         .services {
@@ -353,9 +364,49 @@
             margin: 15px 0;
         }
         
+        .service-list {
+            text-align: left;
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        
+        .service-list li {
+            margin: 8px 0;
+            color: #555;
+        }
+        
+        /* Before/After Gallery */
+        .gallery {
+            background: white;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-placeholder {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
         /* Testimonials */
         .testimonials {
-            background: white;
+            background: #f9f9f9;
         }
         
         .testimonials-grid {
@@ -365,10 +416,11 @@
         }
         
         .testimonial-card {
-            background: #f9f9f9;
+            background: white;
             padding: 2rem;
             border-radius: 15px;
             border-left: 5px solid #ff6b35;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
         
         .testimonial-stars {
@@ -418,6 +470,34 @@
             margin-bottom: 1rem;
         }
         
+        /* FAQ Section */
+        .faq {
+            background: white;
+        }
+        
+        .faq-item {
+            background: #f9f9f9;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            font-weight: bold;
+            color: #1e3c72;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        
         .contact {
             background: #f9f9f9;
             color: #333;
@@ -433,6 +513,7 @@
         }
         
         .contact-form input,
+        .contact-form select,
         .contact-form textarea {
             width: 100%;
             padding: 15px;
@@ -444,6 +525,7 @@
         }
         
         .contact-form input:focus,
+        .contact-form select:focus,
         .contact-form textarea:focus {
             outline: none;
             border-color: #ff6b35;
@@ -552,7 +634,7 @@
 </head>
 <body>
     <div class="urgency-banner">
-        🔥 LIMITED TIME: Get 30% OFF Your First Service! Call Now! 🔥
+        🔥 SPECIAL: 30% OFF First Service + FREE Stain Protection ($150 Value) - Limited Slots! 🔥
     </div>
 
     <header>
@@ -561,108 +643,165 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#areas">Areas</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-phone">📞 Get Quote</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <div class="hero-badge">⭐ Melbourne's #1 Rated Carpet Repair Service</div>
-        <h1>Transform Your Damaged Carpets<br><span class="hero-highlight">Save $1000s</span> vs Replacement!</h1>
-        <p>Expert Repairs in 24 Hours • 100% Satisfaction Guaranteed • Free Quote</p>
+        <div class="hero-badge">⭐ Melbourne's Most Trusted Carpet Repair Experts</div>
+        <h1>Don't Replace - Repair!<br><span class="hero-highlight">Save 80%</span> on Carpet Costs</h1>
+        <p>Expert Carpet Patching, Stretching & Restoration • Same Day Service • 100% Guarantee</p>
         
         <div class="hero-cta-group">
-            <a href="#contact" class="cta-button">📞 Get FREE Quote Now</a>
-            <a href="tel:+61XXXXXXXXX" class="cta-button cta-secondary">📱 Call: XXX XXX XXX</a>
+            <a href="#contact" class="cta-button">📞 Get FREE Quote</a>
+            <a href="https://wa.me/61XXXXXXXXX" class="cta-button cta-secondary">💬 WhatsApp Us</a>
         </div>
         
         <div class="trust-badges">
+            <div class="trust-badge">
+                <div class="trust-badge-number">15+</div>
+                <div class="trust-badge-text">Years Experience</div>
+            </div>
             <div class="trust-badge">
                 <div class="trust-badge-number">500+</div>
                 <div class="trust-badge-text">Happy Customers</div>
             </div>
             <div class="trust-badge">
-                <div class="trust-badge-number">4.9★</div>
-                <div class="trust-badge-text">Google Rating</div>
+                <div class="trust-badge-number">24/7</div>
+                <div class="trust-badge-text">Emergency Service</div>
             </div>
             <div class="trust-badge">
-                <div class="trust-badge-number">24hr</div>
-                <div class="trust-badge-text">Fast Service</div>
+                <div class="trust-badge-number">100%</div>
+                <div class="trust-badge-text">Satisfaction</div>
             </div>
         </div>
     </section>
 
-    <section class="special-offer">
-        <div class="special-offer-content">
-            <h2>🎁 SPECIAL OFFER - TODAY ONLY!</h2>
-            <p>Book Now & Get 30% OFF + FREE Stain Protection ($150 Value)</p>
-            <div class="timer">
-                <div class="timer-box">
-                    <div class="timer-number" id="hours">12</div>
-                    <div class="timer-label">Hours</div>
-                </div>
-                <div class="timer-box">
-                    <div class="timer-number" id="minutes">00</div>
-                    <div class="timer-label">Minutes</div>
-                </div>
-                <div class="timer-box">
-                    <div class="timer-number" id="seconds">00</div>
-                    <div class="timer-label">Seconds</div>
-                </div>
+    <section class="service-areas" id="areas">
+        <div class="container">
+            <h2 class="section-title">Servicing All Melbourne</h2>
+            <p class="section-subtitle">Professional carpet repair across Melbourne's suburbs</p>
+            <div class="areas-grid">
+                <div class="area-item">Toorak</div>
+                <div class="area-item">Brighton</div>
+                <div class="area-item">Richmond</div>
+                <div class="area-item">South Yarra</div>
+                <div class="area-item">Carlton</div>
+                <div class="area-item">Fitzroy</div>
+                <div class="area-item">St Kilda</div>
+                <div class="area-item">Hawthorn</div>
+                <div class="area-item">Kew</div>
+                <div class="area-item">Malvern</div>
+                <div class="area-item">Caulfield</div>
+                <div class="area-item">Elsternwick</div>
+                <div class="area-item">Glen Iris</div>
+                <div class="area-item">Camberwell</div>
+                <div class="area-item">Balwyn</div>
+                <div class="area-item">+ All Suburbs</div>
             </div>
-            <a href="#contact" class="cta-button" style="background: white; color: #ff6b35;">🔥 Claim Your Discount Now</a>
         </div>
     </section>
 
     <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">Our Expert Services</h2>
-            <p class="section-subtitle">Professional carpet solutions that save you money</p>
+            <p class="section-subtitle">Professional solutions that save you thousands</p>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">🔧</div>
-                    <h3>Carpet Repair</h3>
-                    <p>Fix tears, burns, holes & pet damage. Invisible repairs that look brand new!</p>
+                    <h3>Carpet Patching & Repair</h3>
+                    <ul class="service-list">
+                        <li>✓ Burn mark removal</li>
+                        <li>✓ Tear & hole repairs</li>
+                        <li>✓ Pet damage restoration</li>
+                        <li>✓ Invisible seam repairs</li>
+                    </ul>
                     <div class="service-price">From $99</div>
+                    <a href="#contact" class="cta-button" style="font-size: 1rem; padding: 12px 25px;">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📏</div>
+                    <h3>Carpet Re-stretching</h3>
+                    <ul class="service-list">
+                        <li>✓ Remove wrinkles & ripples</li>
+                        <li>✓ Fix loose carpets</li>
+                        <li>✓ Prevent tripping hazards</li>
+                        <li>✓ Extend carpet lifespan</li>
+                    </ul>
+                    <div class="service-price">From $129</div>
+                    <a href="#contact" class="cta-button" style="font-size: 1rem; padding: 12px 25px;">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Color Restoration & Dyeing</h3>
+                    <ul class="service-list">
+                        <li>✓ Fade & bleach spot repair</li>
+                        <li>✓ Color matching</li>
+                        <li>✓ Stain discoloration fix</li>
+                        <li>✓ Full carpet re-dyeing</li>
+                    </ul>
+                    <div class="service-price">From $179</div>
                     <a href="#contact" class="cta-button" style="font-size: 1rem; padding: 12px 25px;">Book Now</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">✨</div>
                     <h3>Deep Cleaning</h3>
-                    <p>Remove stubborn stains, odors & allergens. Hospital-grade cleaning guaranteed.</p>
+                    <ul class="service-list">
+                        <li>✓ Stubborn stain removal</li>
+                        <li>✓ Odor elimination</li>
+                        <li>✓ Allergen removal</li>
+                        <li>✓ Hospital-grade clean</li>
+                    </ul>
                     <div class="service-price">From $149</div>
                     <a href="#contact" class="cta-button" style="font-size: 1rem; padding: 12px 25px;">Book Now</a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3>Color Restoration</h3>
-                    <p>Revive faded carpets & fix discoloration. Looks like new at 1/10th the cost!</p>
-                    <div class="service-price">From $179</div>
-                    <a href="#contact" class="cta-button" style="font-size: 1rem; padding: 12px 25px;">Book Now</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📏</div>
-                    <h3>Re-stretching</h3>
-                    <p>Eliminate wrinkles & bumps. Prevent tripping hazards & extend carpet life.</p>
-                    <div class="service-price">From $129</div>
-                    <a href="#contact" class="cta-button" style="font-size: 1rem; padding: 12px 25px;">Book Now</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🛡️</div>
-                    <h3>Stain Protection</h3>
-                    <p>Shield against future stains & spills. Keep carpets cleaner for longer!</p>
-                    <div class="service-price">From $89</div>
+                    <div class="service-icon">🔗</div>
+                    <h3>Seam Repairs</h3>
+                    <ul class="service-list">
+                        <li>✓ Loose seam fixing</li>
+                        <li>✓ Frayed edge repair</li>
+                        <li>✓ Re-seaming services</li>
+                        <li>✓ Professional finishing</li>
+                    </ul>
+                    <div class="service-price">From $119</div>
                     <a href="#contact" class="cta-button" style="font-size: 1rem; padding: 12px 25px;">Book Now</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🏢</div>
                     <h3>Commercial Services</h3>
-                    <p>Office & hotel carpet care. Flexible scheduling, minimal disruption.</p>
+                    <ul class="service-list">
+                        <li>✓ Office carpet care</li>
+                        <li>✓ Hotel maintenance</li>
+                        <li>✓ Retail space repairs</li>
+                        <li>✓ Flexible scheduling</li>
+                    </ul>
                     <div class="service-price">Custom Quote</div>
                     <a href="#contact" class="cta-button" style="font-size: 1rem; padding: 12px 25px;">Book Now</a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Before & After Results</h2>
+            <p class="section-subtitle">See the transformation - our work speaks for itself</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Burn Repair<br>Before → After</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Pet Damage<br>Before → After</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Re-stretching<br>Before → After</div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 2rem; color: #666;">Contact us to see our full portfolio of completed projects</p>
         </div>
     </section>
 
@@ -686,6 +825,21 @@
                     <p class="testimonial-text">"Best decision ever! The pet stains are completely gone and the smell too. Worth every penny. These guys are miracle workers!"</p>
                     <p class="testimonial-author">- Emma L., Richmond</p>
                 </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Professional service from start to finish. They re-stretched my entire living room carpet and it looks perfect. No more wrinkles!"</p>
+                    <p class="testimonial-author">- Michael K., Hawthorn</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Excellent work on our office carpets. Minimal disruption and the results exceeded expectations. Will definitely use again."</p>
+                    <p class="testimonial-author">- Lisa P., CBD</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"They patched a large damaged area and you literally cannot see where the repair was done. Incredible craftsmanship!"</p>
+                    <p class="testimonial-author">- David R., Malvern</p>
+                </div>
             </div>
         </div>
     </section>
@@ -697,23 +851,59 @@
                 <div class="feature">
                     <div class="feature-icon">⚡</div>
                     <h3>Same Day Service</h3>
-                    <p>Emergency repairs available 24/7</p>
+                    <p>Emergency repairs available 24/7 across Melbourne</p>
                 </div>
                 <div class="feature">
                     <div class="feature-icon">💰</div>
                     <h3>Save 80% vs Replacement</h3>
-                    <p>Professional repairs at fraction of the cost</p>
+                    <p>Professional repairs at a fraction of replacement cost</p>
                 </div>
                 <div class="feature">
                     <div class="feature-icon">✅</div>
-                    <h3>100% Guarantee</h3>
-                    <p>Not happy? We'll redo it for FREE</p>
+                    <h3>100% Satisfaction Guarantee</h3>
+                    <p>Not happy? We'll redo it FREE or full refund</p>
                 </div>
                 <div class="feature">
                     <div class="feature-icon">⭐</div>
                     <h3>15+ Years Experience</h3>
-                    <p>Trusted by 500+ Melbourne families</p>
+                    <p>Certified technicians trusted by 500+ families</p>
                 </div>
+                <div class="feature">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Fully Insured & Licensed</h3>
+                    <p>Complete peace of mind with every job</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Invisible Repairs</h3>
+                    <p>Expert craftsmanship - you won't see the fix</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">How much does carpet repair cost? 💰</div>
+                <div class="faq-answer">Prices start from $99 for basic repairs. Most jobs range from $99-$300 depending on damage size and complexity. We provide FREE quotes with no obligation.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How long does carpet repair take? ⏱️</div>
+                <div class="faq-answer">Most repairs are completed in 1-3 hours. We offer same-day service for urgent repairs. Complex jobs may require 24-48 hours.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can you match my carpet color? 🎨</div>
+                <div class="faq-answer">Yes! We use professional color-matching techniques and can source matching carpet or dye to perfectly match your existing carpet.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you offer emergency services? 🚨</div>
+                <div class="faq-answer">Absolutely! We provide 24/7 emergency carpet repair services across Melbourne for urgent situations.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What's your guarantee? ✅</div>
+                <div class="faq-answer">100% satisfaction guaranteed. If you're not happy with the repair, we'll redo it for FREE or provide a full refund within 72 hours.</div>
             </div>
         </div>
     </section>
@@ -721,7 +911,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get Your FREE Quote Today!</h2>
-            <p class="section-subtitle">Fill out the form below or call us now for instant quote</p>
+            <p class="section-subtitle">Fill out the form or call/WhatsApp us for instant response</p>
             
             <div class="contact-form-container">
                 <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
@@ -729,62 +919,52 @@
                     <input type="tel" name="phone" placeholder="Phone Number *" required>
                     <input type="email" name="email" placeholder="Email Address *" required>
                     <input type="text" name="suburb" placeholder="Suburb *" required>
-                    <textarea name="message" rows="4" placeholder="Describe your carpet issue... *" required></textarea>
+                    <select name="service" required>
+                        <option value="">Select Service Type *</option>
+                        <option value="carpet-patching">Carpet Patching/Repair</option>
+                        <option value="re-stretching">Carpet Re-stretching</option>
+                        <option value="color-restoration">Color Restoration/Dyeing</option>
+                        <option value="deep-cleaning">Deep Cleaning</option>
+                        <option value="seam-repair">Seam Repairs</option>
+                        <option value="commercial">Commercial Services</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <textarea name="message" rows="4" placeholder="Describe your carpet issue (burns, tears, stains, etc.) *" required></textarea>
                     <button type="submit">🎯 Get My FREE Quote Now!</button>
                 </form>
             </div>
             
             <div class="contact-info">
                 <div class="contact-item">
-                    <div class="contact-item-icon">📍</div>
-                    <h3>Location</h3>
-                    <p>Serving All Melbourne<br>& Surrounding Suburbs</p>
+                    <div class="contact-item-icon">📞</div>
+                    <h3>Call Us Now</h3>
+                    <a href="tel:+61XXXXXXXXX">XXX XXX XXX</a>
+                    <p style="font-size: 0.9rem; margin-top: 5px; color: #666;">Available 24/7</p>
                 </div>
                 <div class="contact-item">
-                    <div class="contact-item-icon">📞</div>
-                    <h3>Call Now</h3>
-                    <a href="tel:+61XXXXXXXXX">XXX XXX XXX</a>
-                    <p style="font-size: 0.9rem; margin-top: 5px;">Available 24/7</p>
+                    <div class="contact-item-icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <a href="https://wa.me/61XXXXXXXXX">Message Us</a>
+                    <p style="font-size: 0.9rem; margin-top: 5px; color: #666;">Instant Response</p>
                 </div>
                 <div class="contact-item">
                     <div class="contact-item-icon">✉️</div>
                     <h3>Email Us</h3>
                     <a href="mailto:info@melbcarpetcare.com">info@melbcarpetcare.com</a>
-                    <p style="font-size: 0.9rem; margin-top: 5px;">Quick Response</p>
+                    <p style="font-size: 0.9rem; margin-top: 5px; color: #666;">Quick Reply</p>
                 </div>
             </div>
         </div>
     </section>
 
     <div class="floating-cta">
-        <a href="tel:+61XXXXXXXXX">📞 Call Now - 30% OFF!</a>
+        <a href="https://wa.me/61XXXXXXXXX">💬 WhatsApp - 30% OFF!</a>
     </div>
 
     <footer>
-        <p>&copy; 2025 Melb Carpet Care. All rights reserved. | ABN: XXXXXXXXX | Fully Insured & Licensed</p>
-        <p style="margin-top: 10px; font-size: 0.9rem;">Professional Carpet Repair & Restoration Services Across Melbourne</p>
+        <p>&copy; 2025 Melb Carpet Care. All rights reserved.</p>
+        <p style="margin-top: 10px; font-size: 0.9rem;">Professional Carpet Repair, Patching, Stretching & Restoration Services Across Melbourne</p>
+        <p style="margin-top: 10px; font-size: 0.85rem;">Fully Insured & Licensed | ABN: XXXXXXXXX</p>
     </footer>
-
-    <script>
-        // Countdown Timer
-        function updateTimer() {
-            const now = new Date();
-            const midnight = new Date();
-            midnight.setHours(24, 0, 0, 0);
-            
-            const diff = midnight - now;
-            
-            const hours = Math.floor(diff / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-            
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-        }
-        
-        updateTimer();
-        setInterval(updateTimer, 1000);
-    </script>
 </body>
 </html>
